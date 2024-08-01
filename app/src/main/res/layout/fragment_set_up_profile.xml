@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    tools:context=".fragments.SetUpProfileFragment">
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="48dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/set_up_profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Set Up Your Profile!"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="With 3 Simple Steps!"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_solid_background"
+        android:layout_gravity="center_horizontal"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:paddingHorizontal="48dp" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="1. Your Location &amp; Language.\n2. Your Sports Interests.\n3. Your Profession &amp; Hobbies."-->
+<!--        android:textSize="21sp"-->
+<!--        android:lineHeight="32dp"-->
+<!--        android:textColor="@color/text_color" />-->
+
+</LinearLayout>

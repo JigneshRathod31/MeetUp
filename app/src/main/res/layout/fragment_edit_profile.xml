@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.EditProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_img"
+                android:layout_width="144dp"
+                android:layout_height="144dp"
+                android:scaleType="centerCrop"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/primary"
+                android:src="@drawable/avatar_four" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="8dp"
+                app:tint="@color/white"
+                android:src="@drawable/ic_edit"
+                android:background="@drawable/rounded_solid_background" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your Information"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_username"
+            style="@style/EditTextStyle"
+            android:hint="Username"
+            android:drawableStart="@drawable/ic_user" />
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/EditTextStyle"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            style="@style/EditTextStyle"
+            android:hint="Mobile"
+            android:drawableStart="@drawable/ic_mobile" />
+
+        <Spinner
+            android:id="@+id/sp_gender"
+            style="@style/EditTextStyle"
+            android:entries="@array/gender"
+            android:drawableStart="@drawable/ic_male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/et_dob"
+                style="@style/EditTextStyle"
+                android:layout_marginEnd="56dp"
+                android:layout_marginTop="0dp"
+                android:hint="Date Of Birth"
+                android:drawableStart="@drawable/ic_dob_calendar" />
+
+            <ImageButton
+                android:id="@+id/ib_dob"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_dob_calendar"
+                app:tint="@color/white"
+                android:background="@drawable/rounded_background" />
+
+        </RelativeLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/act_state"
+            style="@style/EditTextStyle"
+            android:hint="State"
+            android:drawableStart="@drawable/ic_location" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:padding="16dp" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

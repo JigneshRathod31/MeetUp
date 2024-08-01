@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "297783805904",
+    "project_id": "meet-up-6e5c5",
+    "storage_bucket": "meet-up-6e5c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297783805904:android:5a41e0308fcc87bf479bd5",
+        "android_client_info": {
+          "package_name": "com.jignesh.meetup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG1E6MuAAnpR2XAQ8DhMmip8j1HAY62Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
